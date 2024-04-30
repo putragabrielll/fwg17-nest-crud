@@ -6,6 +6,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 const config = new DocumentBuilder()
   .setTitle('Basic CRUD')
   .setVersion('1.0')
+  .addBearerAuth()
   .build();
 
 async function bootstrap() {
